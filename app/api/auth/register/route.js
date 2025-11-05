@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createUser, getUserByEmail } from '@/lib/auth';
+import prisma from '@/lib/prisma';
 
 export async function POST(request) {
   try {
@@ -18,6 +19,20 @@ export async function POST(request) {
         { error: 'User already exists' },
         { status: 422 }
       );
+    }
+
+    // Check HR limit: maximum 5 HR users allowed
+    if (role === 'HR') {
+      const hrCount = await prisma.user.count({
+        where: { role: 'HR' }
+      });
+
+      if (hrCount >= 5) {
+        return NextResponse.json(
+          { error: 'Maximum limit of 5 HR managers reached. Contact existing HR to create more employees.' },
+          { status: 403 }
+        );
+      }
     }
 
     const user = await createUser(email, password, name, role || 'EMPLOYEE');
