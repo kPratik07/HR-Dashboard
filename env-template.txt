@@ -1,0 +1,24 @@
+# Environment Variables Template
+# Copy this to .env.local and fill in your values
+
+# MongoDB Atlas Connection String
+# Replace <username>, <password>, and <cluster-url> with your actual values
+DATABASE_URL="mongodb+srv://<username>:<password>@<cluster-url>.mongodb.net/hr-dashboard?retryWrites=true&w=majority"
+
+# NextAuth Configuration
+NEXTAUTH_SECRET="hr-dashboard-secret-key-2024-change-in-production-please"
+NEXTAUTH_URL="http://localhost:3000"
+
+# Gmail Configuration for Password Reset Emails
+# IMPORTANT: Use Gmail App Password, not your regular Gmail password
+# To get an App Password:
+# 1. Go to https://myaccount.google.com/security
+# 2. Enable 2-Step Verification if not already enabled
+# 3. Go to https://myaccount.google.com/apppasswords
+# 4. Generate a new app password for "Mail"
+# 5. Copy the 16-character password and paste it below
+GMAIL_USER="your-email@gmail.com"
+GMAIL_APP_PASSWORD="your-16-character-app-password"
+
+# Example MongoDB Atlas URL:
+# DATABASE_URL="mongodb+srv://myuser:mypassword@cluster0.abc123.mongodb.net/hr-dashboard?retryWrites=true&w=majority"

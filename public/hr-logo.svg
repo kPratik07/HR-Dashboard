@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <circle cx="256" cy="256" r="240" fill="url(#gradient1)"/>
+  
+  <!-- People Icon Group -->
+  <g transform="translate(256, 256)">
+    <!-- Person 1 (Left) -->
+    <circle cx="-60" cy="-20" r="28" fill="white" opacity="0.95"/>
+    <path d="M -60 15 C -60 15 -90 15 -90 45 L -90 70 C -90 75 -85 80 -80 80 L -40 80 C -35 80 -30 75 -30 70 L -30 45 C -30 15 -60 15 -60 15 Z" fill="white" opacity="0.95"/>
+    
+    <!-- Person 2 (Center - Larger) -->
+    <circle cx="0" cy="-30" r="35" fill="white"/>
+    <path d="M 0 15 C 0 15 -35 15 -35 55 L -35 85 C -35 92 -28 98 -22 98 L 22 98 C 28 98 35 92 35 85 L 35 55 C 35 15 0 15 0 15 Z" fill="white"/>
+    
+    <!-- Person 3 (Right) -->
+    <circle cx="60" cy="-20" r="28" fill="white" opacity="0.95"/>
+    <path d="M 60 15 C 60 15 30 15 30 45 L 30 70 C 30 75 35 80 40 80 L 80 80 C 85 80 90 75 90 70 L 90 45 C 90 15 60 15 60 15 Z" fill="white" opacity="0.95"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="120" cy="120" r="8" fill="white" opacity="0.6"/>
+  <circle cx="390" cy="140" r="6" fill="white" opacity="0.5"/>
+  <circle cx="380" cy="370" r="10" fill="white" opacity="0.6"/>
+  <circle cx="130" cy="380" r="7" fill="white" opacity="0.5"/>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
