@@ -6,7 +6,7 @@ A comprehensive employee management system built with modern web technologies. M
 
 ## 🛠️ Tech Stack
 
-**Frontend:** Next.js 14, React 19, Tailwind CSS, Chart.js, Lucide React  
+**Frontend:** Next.js 16, React 19, Tailwind CSS, Chart.js, Lucide React  
 **Backend:** Next.js API Routes, NextAuth.js, Prisma ORM, MongoDB, Bcrypt.js, Nodemailer
 
 ---
